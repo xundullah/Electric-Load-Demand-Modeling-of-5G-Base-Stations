@@ -335,6 +335,9 @@ The process for calculating the total power consumption of 5G BSs in a given are
    - Including the power consumption of air conditioning and power equipment, the final total power consumption for all BSs in area $k$ is:
 
    $$ P_{\text{S\_total},k}(t) = P_{\text{we},k}(t) + N_k \cdot P_{\text{ac},\text{pe}}(t) $$
+
+   `P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)` *(Equation 2)*
+
    
    *(Equation 19)*
 
