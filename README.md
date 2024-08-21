@@ -97,12 +97,13 @@ The electric load characteristics of a 5G base station (BS) focus on the power c
    - The total power consumption of the wireless equipment in a 5G BS at any time $t$ consists of both static baseline power consumption and time-varying incremental power consumption, represented by the equation:
 
 *Equation 1:*
-$$P_{\text{we}}(t) = P_{i,\text{AAU}}(t) + P_{b,\text{AAU}} + P_{b,\text{BBU}}$$
+
+$$P_{we}(t) = P_{i,AAU}(t) + P_{b,AAU} + P_{b,BBU}$$
 
    where:
-   - $P_{\text{we}}(t)$ is the total power consumption at time $t$.
-   - $P_{i,\text{AAU}}(t)$ is the incremental power consumption of AAU at time $t$.
-   - $P_{b,\text{AAU}}$ and $P_{b,\text{BBU}}$ are the baseline power consumptions of AAU and BBU, respectively.
+   - $P_{we}(t)$ is the total power consumption at time $t$.
+   - $P_{i,AAU}(t)$ is the incremental power consumption of AAU at time $t$.
+   - $P_{b,AAU}$ and $P_{b,BBU}$ are the baseline power consumptions of AAU and BBU, respectively.
 
 ### Incremental Power Consumption of AAU
 
