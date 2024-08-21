@@ -153,14 +153,12 @@ The hourly data usage for 5G network terminals in different usage states (normal
    - Hourly data usage for the normal use state ($\alpha^n_k(t)$) and heavy use state ($\alpha^h_k(t)$) follows an exponential distribution.
    - The probability density functions for these states are given by:
 
-$$
-     f[\alpha^n_k(t)] = \frac{1}{\theta_{\alpha^n_k(t)}} e^{-\frac{\alpha^n_k(t)}{\theta_{\alpha^n_k(t)}}}, \quad \alpha^n_k(t) > 0
-$$
+*Equation 6:*
 
-$$
-     f[\alpha^h_k(t)] = \frac{1}{\theta_{\alpha^h_k(t)}} e^{-\frac{\alpha^h_k(t)}{\theta_{\alpha^h_k(t)}}}, \quad \alpha^h_k(t) > 0
-$$
-     *(Equation 6)*
+$$f[\alpha^n_k(t)] = \frac{1}{\theta_{\alpha^n_k(t)}} e^{-\frac{\alpha^n_k(t)}{\theta_{\alpha^n_k(t)}}}, \quad \alpha^n_k(t) > 0$$
+
+$$f[\alpha^h_k(t)] = \frac{1}{\theta_{\alpha^h_k(t)}} e^{-\frac{\alpha^h_k(t)}{\theta_{\alpha^h_k(t)}}}, \quad \alpha^h_k(t) > 0$$
+
 
 2. **Parameters of Exponential Distribution**:
    - The parameters $\theta_{\alpha^n_k(t)}$ and $\theta_{\alpha^h_k(t)}$ represent the expected value of hourly data usage in different states.
