@@ -268,7 +268,7 @@ $$T_{dd,k}(t) = \min \[ N_k \cdot T_{dd_{max}} , T_{dd,k}(t)]$$
 
 $$R_{ds,k}(t) = \min \[ N_k \cdot R_{ds_{max}} , R_{ds,k}(t)]$$
 
-$$R_{\text{ds}_{\text{max}}} = R_{\text{ds}_{\text{RE}}} + R_{\text{dd}_{\text{RE}}}$$ -->
+$$R_{ds_{max}} = R_{ds_{RE}} + R_{dd_{RE}}$$
 
 
 
