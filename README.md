@@ -98,7 +98,7 @@ The electric load characteristics of a 5G base station (BS) focus on the power c
 
 *Equation 1:*
 
-$$P_{we}(t) = P_{i,AAU}(t) + P_{b,AAU} + P_{b,BBU}$$
+$$P_{we}(t) = P_{i,AAU}(t) + P_{b,AAU} + P_{b,BBU}$$ ... (1)
 
    where:
    - $P_{we}(t)$ is the total power consumption at time $t$.
