@@ -287,13 +287,13 @@ $$P_{ids,AAU,k}(t) = N_k \cdot \frac{P_{max,AAU} - P_{b,AAU}}{R_{ds_{RE}} + R_{d
 3. **Baseline Power Consumption**:
    - The baseline power consumption for the AAU and BBU in area $k$ at time $t$ is given by:
 
-$$
-   \begin{aligned}
-   P_{\text{b},\text{AAU},k} &= N_k \cdot P_{\text{b},\text{AAU}} \\
-   P_{\text{b},\text{BBU},k} &= N_k \cdot P_{\text{b},\text{BBU}}
-   \end{aligned}
-$$
-   *(Equations 15 and 16)*
+*Equations 15:*  
+
+$$P_{b,AAU,k} = N_k \cdot P_{b,AAU}$$
+
+*Equations 16:* 
+
+$$P_{b,BBU,k} = N_k \cdot P_{b,BBU}$$
 
 4. **Total Power Consumption**:
    - The total power consumption for a single AAU, including incremental and baseline components, is calculated as:
