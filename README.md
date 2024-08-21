@@ -99,7 +99,6 @@ The electric load characteristics of a 5G base station (BS) focus on the power c
 *Equation 1:*
 $$P_{\text{we}}(t) = P_{i,\text{AAU}}(t) + P_{b,\text{AAU}} + P_{b,\text{BBU}}$$
 
-
    where:
    - $P_{\text{we}}(t)$ is the total power consumption at time $t$.
    - $P_{i,\text{AAU}}(t)$ is the incremental power consumption of AAU at time $t$.
@@ -111,18 +110,17 @@ The incremental power consumption of the AAU, denoted as $P_{i,\text{AAU}}(t)$, 
 
 #### Total Incremental Power Consumption:
 
+*(Equation 2):*
 $$P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)$$
-*(Equation 2)*
+
 
 - **$P_{\text{idd},\text{AAU}}(t)$**: Power consumption related to the downlink data volume at time $t$.
 - **$P_{\text{ids},\text{AAU}}(t)$**: Power consumption related to downlink signaling REs (Resource Elements).
 
 #### Power Consumption Related to Downlink Data Volume:
 
-$$
-   P_{\text{idd},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd},\text{max}}} \cdot T_{\text{dd}}(t)
-$$
-*(Equation 3)*
+*(Equation 3):*
+$$P_{\text{idd},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd},\text{max}}} \cdot T_{\text{dd}}(t)$$
 
 - **$P_{\text{max},\text{AAU}}$**: Maximum power consumption of the AAU.
 - **$P_{\text{b},\text{AAU}}$**: Baseline power consumption of the AAU.
