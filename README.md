@@ -17,7 +17,7 @@ This study provides a detailed analysis of the electric load demand modeling for
 
 ### Variables
 
-- **$P_{i,\text{AAU}}(t)$**: Incremental power consumption of the Active Antenna Unit (AAU) at time $t$ [kW].
+- **$P_{i,AAU}(t)$**: Incremental power consumption of the Active Antenna Unit (AAU) at time $t$ [kW].
 - **$P_{\text{idd},\text{AAU}}(t)$**: Incremental power consumption of the AAU due to downlink data at time $t$ [kW].
 - **$P_{\text{ids},\text{AAU}}(t)$**: Incremental power consumption of the AAU due to downlink signaling at time $t$ [kW].
 - **$P_{\text{we}}(t)$**: Total power consumption of the 5G BS at time $t$ [kW].
