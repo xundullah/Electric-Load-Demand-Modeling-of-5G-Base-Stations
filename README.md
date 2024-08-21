@@ -236,6 +236,7 @@ $$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
 
 
 *Equation 11:*  
+
 $$T_{\text{dd},k}(t) = \frac{8 \cdot \mu_{\text{data},k}(t)}{3600}$$
 
 $$R_{\text{ds},k}(t) = \frac{T_{\text{dd},k}(t)}{A_{\text{RE}}}$$ 
