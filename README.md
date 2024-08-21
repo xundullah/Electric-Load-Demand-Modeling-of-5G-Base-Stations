@@ -313,7 +313,7 @@ $$P_{we,k}(t) = P_{i,AAU,k}(t) + P_{b,AAU,k} + P_{b,BBU,k}$$
 
 *Equation 19:*  
 
-$$P_{s_{total},k}(t) = P_{we,k}(t) + N_k \cdot P_{ac,pe}(t)$$
+$$P_{s_total},k}(t) = P_{we,k}(t) + N_k \cdot P_{ac,pe}(t)$$
    
 
 This comprehensive model allows for the precise estimation of power consumption by 5G BSs, providing a critical tool for managing energy efficiency and optimizing network performance in the context of increasing demand for mobile services.
