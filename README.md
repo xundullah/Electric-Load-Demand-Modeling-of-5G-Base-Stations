@@ -150,7 +150,7 @@ $$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
 The hourly data usage for 5G network terminals in different usage states (normal and heavy) is modeled using exponential distributions. The following are key aspects of this model:
 
 1. **Exponential Distribution for Data Usage**:
-   - Hourly data usage for the normal use state ($\alpha^n_k(t)$) and heavy use state ($\alpha^h_k(t)$) follows an exponential distribution.
+   - Hourly data usage for the normal use state ( $\alpha^n_k(t)$ ) and heavy use state ( $\alpha^h_k(t)$ ) follows an exponential distribution.
    - The probability density functions for these states are given by:
 
 *Equation 6:*
