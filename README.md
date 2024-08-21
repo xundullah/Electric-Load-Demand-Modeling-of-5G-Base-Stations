@@ -235,7 +235,9 @@ $$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
    - The downlink data rate and signaling REs at time $t$ in area $k$ can be calculated using:
 
 *Equation 11:*
-$$T_{\text{dd},k}(t) &= 8 \cdot \mu_{\text{data},k}(t) / 3600 \\ R_{\text{ds},k}(t) &= T_{\text{dd},k}(t) / A_{\text{RE}}$$
+$$T_{\text{dd},k}(t) &= 8 \cdot \mu_{\text{data},k}(t) / 3600$$
+
+$$R_{\text{ds},k}(t) &= T_{\text{dd},k}(t) / A_{\text{RE}}$$
    
 
 ---
