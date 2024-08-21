@@ -111,22 +111,35 @@ The incremental power consumption of the AAU, denoted as $P_{i,\text{AAU}}(t)$, 
 
 #### Total Incremental Power Consumption:
 
-*Equation 2:*
-$$P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)$$
+`Equation 2:`
 
+$$P_{i,AAU}(t) = P_{idd,AAU}(t) + P_{ids,AAU}(t)$$
 
-- **$P_{\text{idd},\text{AAU}}(t)$**: Power consumption related to the downlink data volume at time $t$.
-- **$P_{\text{ids},\text{AAU}}(t)$**: Power consumption related to downlink signaling REs (Resource Elements).
+   where:
+   - $P_{idd,AAU}(t)$: Power consumption related to the downlink data volume at time $t$.
+   - $P_{ids,AAU}(t)$: Power consumption related to downlink signaling REs (Resource Elements).
 
 #### Power Consumption Related to Downlink Data Volume:
 
-*Equation 3:*
+`Equation 3:`
+
 $$P_{\text{idd},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd},\text{max}}} \cdot T_{\text{dd}}(t)$$
 
 - **$P_{\text{max},\text{AAU}}$**: Maximum power consumption of the AAU.
 - **$P_{\text{b},\text{AAU}}$**: Baseline power consumption of the AAU.
 - **$T_{\text{dd},\text{max}}$**: Maximum downlink data rate of the BS.
 - **$T_{\text{dd}}(t)$**: Downlink data rate at time $t$.
+
+
+`Equation 3:`
+
+$$P_{idd,AAU}(t) = \frac{P_{max,AAU} - P_{b,AAU}}{T_{dd,max}} \cdot T_{dd}(t)$$
+
+   where:
+   - $P_{max,AAU}$: Maximum power consumption of the AAU.
+   - $P_{b,AAU}$: Baseline power consumption of the AAU.
+   - $T_{dd,max}$: Maximum downlink data rate of the BS.
+   - $T_{dd}(t)$: Downlink data rate at time $t$.
 
 #### Power Consumption Related to Downlink Signaling REs:
 
