@@ -1,8 +1,8 @@
 # Electric-Load-Demand-Modeling-of-5G-Base-Stations
 
-### Comprehensive Report on Electric Load Demand Modeling of 5G Base Stations
+### Study on Electric Load Demand Modeling of 5G Base Stations
 
-This report provides a detailed analysis of the electric load demand modeling for 5G base stations (BSs), considering multiple terminals' activation and usage patterns. The modeling approach incorporates various probability distributions, Monte Carlo simulations, and detailed nomenclature to predict the power consumption behavior of BSs. This analysis is crucial for understanding the impact of 5G technology on energy consumption in urban areas.
+This study provides a detailed analysis of the electric load demand modeling for 5G base stations (BSs), considering multiple terminals' activation and usage patterns. The modeling approach incorporates various probability distributions, Monte Carlo simulations, and detailed nomenclature to predict the power consumption behavior of BSs. This analysis will be beneficial for understanding the impact of 5G technology on energy consumption in urban areas.
 
 ---
 
@@ -96,9 +96,7 @@ The electric load characteristics of a 5G base station (BS) focus on the power c
 5. **Mathematical Representation**:
    - The total power consumption of the wireless equipment in a 5G BS at any time $t$ consists of both static baseline power consumption and time-varying incremental power consumption, represented by the equation:
 
-$$
-P_{\text{we}}(t) = P_{i,\text{AAU}}(t) + P_{b,\text{AAU}} + P_{b,\text{BBU}}
-$$
+$$(P_{\text{we}}(t) = P_{i,\text{AAU}}(t) + P_{b,\text{AAU}} + P_{b,\text{BBU}})$$
    *(Equation 1)*
 
    where:
