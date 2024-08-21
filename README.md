@@ -261,13 +261,14 @@ The process for calculating the total power consumption of 5G BSs in a given are
 
 1. **Total Downlink Data Rate and Signaling REs**:
    
-*Equation 12:*  
+*Equation 12:*
 
-$$T_{\text{dd},k}(t) = \min[N_k \cdot T_{\text{dd}_\text{max}}, T_{\text{dd},k}(t)]$$
+$$T_{\text{dd},k}(t) = \min\left[N_k \cdot T_{\text{dd}_\text{max}}, T_{\text{dd},k}(t)\right]$$
 
-$$R_{\text{ds},k}(t) = \min[N_k \cdot R_{\text{ds}_\text{max}}, R_{\text{ds},k}(t)]$$
+$$R_{\text{ds},k}(t) = \min\left[N_k \cdot R_{\text{ds}_\text{max}}, R_{\text{ds},k}(t)\right]$$
 
 $$R_{\text{ds}_\text{max}} = R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}$$
+
 
 
 2. **Incremental Power Consumption of AAU**:
