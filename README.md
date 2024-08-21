@@ -150,7 +150,7 @@ $$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
 The hourly data usage for 5G network terminals in different usage states (normal and heavy) is modeled using exponential distributions. The following are key aspects of this model:
 
 1. **Exponential Distribution for Data Usage**:
-   - Hourly data usage for the normal use state ( $\alpha^n_k(t)$ ) and heavy use state ( $\alpha^h_k(t)$ ) follows an exponential distribution.
+   - Hourly data usage for the normal use state $\alpha^n_k(t)$ and heavy use state $\alpha^h_k(t)$ follows an exponential distribution.
    - The probability density functions for these states are given by:
 
 *Equation 6:*
@@ -167,15 +167,12 @@ $$f[\alpha^h_k(t)] = \frac{1}{\theta_{\alpha^h_k(t)}} e^{-\frac{\alpha^h_k(t)}{\
 3. **Parameter Conversion**:
    - The parameters of the exponential distribution are converted using the mean value of historical data usage:
 
-$$
-     \theta_{\alpha^n_k(t)} = \gamma_Q M_{\alpha^n_k}
-$$
+*Equation 7:*
 
-$$
-     \theta_{\alpha^h_k(t)} = \gamma_Q M_{\alpha^h_k}
-$$
-     *(Equation 7)*
+$$\theta_{\alpha^n_k(t)} = \gamma_Q M_{\alpha^n_k}$$
 
+$$\theta_{\alpha^h_k(t)} = \gamma_Q M_{\alpha^h_k}$$
+     
    - Here, $\gamma_Q$ depends on the average bandwidth requirement for different quality levels of 5G applications compared to historical data usage.
 
 ---
