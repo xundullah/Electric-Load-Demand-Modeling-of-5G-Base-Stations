@@ -123,16 +123,6 @@ $$P_{i,AAU}(t) = P_{idd,AAU}(t) + P_{ids,AAU}(t)$$
 
 `Equation 3:`
 
-$$P_{\text{idd},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd},\text{max}}} \cdot T_{\text{dd}}(t)$$
-
-- **$P_{\text{max},\text{AAU}}$**: Maximum power consumption of the AAU.
-- **$P_{\text{b},\text{AAU}}$**: Baseline power consumption of the AAU.
-- **$T_{\text{dd},\text{max}}$**: Maximum downlink data rate of the BS.
-- **$T_{\text{dd}}(t)$**: Downlink data rate at time $t$.
-
-
-`Equation 3:`
-
 $$P_{idd,AAU}(t) = \frac{P_{max,AAU} - P_{b,AAU}}{T_{dd,max}} \cdot T_{dd}(t)$$
 
    where:
@@ -143,19 +133,23 @@ $$P_{idd,AAU}(t) = \frac{P_{max,AAU} - P_{b,AAU}}{T_{dd,max}} \cdot T_{dd}(t)$$
 
 #### Power Consumption Related to Downlink Signaling REs:
 
-*Equation 4:*
-$$P_{\text{ids},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds},\text{RE}} + R_{\text{dd},\text{RE}}} \cdot R_{\text{ds}}(t)$$
+`Equation 4:`
 
-- **$R_{\text{ds},\text{RE}}$**: Total available signaling REs for variable signaling per second.
-- **$R_{\text{dd},\text{RE}}$**: Total available REs for downlink data per second.
-- **$R_{\text{ds}}(t)$**: Downlink signaling REs at time $t$.
+$$P_{ids,AAU}(t) = \frac{P_{max,AAU} - P_{b,AAU}}{R_{ds,RE} + R_{dd,RE}} \cdot R_{ds}(t)$$
+
+where:
+- $R_{ds,RE}$: Total available signaling REs for variable signaling per second.
+- $R_{dd,RE}$: Total available REs for downlink data per second.
+- $R_{ds}(t)$: Downlink signaling REs at time $t$.
 
 #### Relationship Between Data Rate and Signaling REs:
 
-*Equation 5:*
-$$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
+`Equation 5:`
 
-- **$A_{\text{RE}}$**: Average amount of downlink data carried by each downlink signaling RE [Mb/RE], which depends on the average channel quality of the mobile devices.
+$$T_{dd}(t) = A_{RE} \cdot R_{ds}(t)$$
+
+where:
+- $A_{RE}$: Average amount of downlink data carried by each downlink signaling RE [Mb/RE], which depends on the average channel quality of the mobile devices.
 
 ---
 
