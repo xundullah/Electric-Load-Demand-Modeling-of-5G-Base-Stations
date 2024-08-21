@@ -275,13 +275,13 @@ $$R_{\text{ds}_{\text{max}}} = R_{\text{ds}_{\text{RE}}} + R_{\text{dd}_{\text{R
 2. **Incremental Power Consumption of AAU**:
    - The incremental power consumption is calculated by substituting the total downlink data rate and signaling REs into the incremental power consumption equations:
 
-$$
-   \begin{aligned}
-   P_{\text{idd},\text{AAU},k}(t) &= N_k \cdot \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd}_\text{max}}} \cdot \frac{T_{\text{dd},k}(t)}{N_k} \\
-   P_{\text{ids},\text{AAU},k}(t) &= N_k \cdot \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}} \cdot \frac{R_{\text{ds},k}(t)}{N_k}
-   \end{aligned}
-$$
-   *(Equations 13 and 14)*
+*Equations 13:*  
+
+$$P_{\text{idd},\text{AAU},k}(t) = N_k \cdot \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd}_\text{max}}} \cdot \frac{T_{\text{dd},k}(t)}{N_k}$$
+
+*Equations 14:*
+$$P_{\text{ids},\text{AAU},k}(t) = N_k \cdot \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}} \cdot \frac{R_{\text{ds},k}(t)}{N_k}$$"
+
 
 3. **Baseline Power Consumption**:
    - The baseline power consumption for the AAU and BBU in area $k$ at time $t$ is given by:
