@@ -265,7 +265,6 @@ The process for calculating the total power consumption of 5G BSs in a given are
 
 $$T_{dd,k}(t) = \min \[ N_k \cdot T_{dd_{max}} , T_{dd,k}(t)]$$
 
-
 $$R_{ds,k}(t) = \min \[ N_k \cdot R_{ds_{max}} , R_{ds,k}(t)]$$
 
 $$R_{ds_{max}} = R_{ds_{RE}} + R_{dd_{RE}}$$
@@ -276,12 +275,13 @@ $$R_{ds_{max}} = R_{ds_{RE}} + R_{dd_{RE}}$$
 2. **Incremental Power Consumption of AAU**:
    - The incremental power consumption is calculated by substituting the total downlink data rate and signaling REs into the incremental power consumption equations:
 
-*Equations 13:*  
+*Equation 13:*  
 
-$$P_{\text{idd},\text{AAU},k}(t) = N_k \cdot \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd}_\text{max}}} \cdot \frac{T_{\text{dd},k}(t)}{N_k}$$
+$$P_{idd,AAU,k}(t) = N_k \cdot \frac{P_{max,AAU} - P_{b,AAU}}{T_{dd_{max}}} \cdot \frac{T_{dd,k}(t)}{N_k}$$
 
-*Equations 14:*
-$$P_{\text{ids},\text{AAU},k}(t) = N_k \cdot \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}} \cdot \frac{R_{\text{ds},k}(t)}{N_k}$$"
+*Equation 14:*  
+
+$$P_{ids,AAU,k}(t) = N_k \cdot \frac{P_{max,AAU} - P_{b,AAU}}{R_{ds_{RE}} + R_{dd_{RE}}} \cdot \frac{R_{ds,k}(t)}{N_k}$$
 
 
 3. **Baseline Power Consumption**:
