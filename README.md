@@ -110,9 +110,7 @@ The incremental power consumption of the AAU, denoted as $P_{i,\text{AAU}}(t)$, 
 
 #### Total Incremental Power Consumption:
 
-$$
-   P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)
-$$
+$$P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)$$
 *(Equation 2)*
 
 - **$P_{\text{idd},\text{AAU}}(t)$**: Power consumption related to the downlink data volume at time $t$.
