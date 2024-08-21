@@ -271,6 +271,7 @@ $$R_{\text{ds}_\text{max}} = R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}$$
 
 
 
+
 2. **Incremental Power Consumption of AAU**:
    - The incremental power consumption is calculated by substituting the total downlink data rate and signaling REs into the incremental power consumption equations:
 
