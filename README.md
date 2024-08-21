@@ -41,7 +41,7 @@ This study provides a detailed analysis of the electric load demand modeling for
 
 ### Parameters
 
-- **$A_RE}$**: Average amount of downlink data carried by each downlink signaling RE [Mb/RE].
+- **$A_{RE}$**: Average amount of downlink data carried by each downlink signaling RE [Mb/RE].
 - **$M_{\alpha^h_k}$**: Mean value of historical hourly data usage for heavy use state.
 - **$M_{\alpha^n_k}$**: Mean value of historical hourly data usage for normal use state.
 - **$N_k$**: Number of base stations (BSs) in area $k$.
