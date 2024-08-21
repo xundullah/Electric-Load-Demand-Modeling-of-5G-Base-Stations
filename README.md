@@ -194,10 +194,8 @@ This model estimates the electric load demand for multiple terminals connected t
 - **Modeling the Number of Activated Terminals**:
   - The number of activated terminals $\beta_k(t)$ in different types of areas is modeled using a Poisson distribution:
 
-$$
-  P[\beta_k(t) = n] = \frac{\lambda_{\beta_k(t)}^n e^{-\lambda_{\beta_k(t)}}}{n!}, \quad n = 1, 2, \dots
-$$
-  *(Equation 8)*
+*Equation 8:*
+$$P[\beta_k(t) = n] = \frac{\lambda_{\beta_k(t)}^n e^{-\lambda_{\beta_k(t)}}}{n!}, \quad n = 1, 2, \dots$$
 
   - The parameter $\lambda_{\beta_k(t)}$ represents the expected number of activated terminals at time $t$ in area $k$.
 
@@ -213,18 +211,14 @@ The Monte Carlo sampling approach models and estimates the hourly total data usa
 2. **Generate Hourly Data Usage per Terminal**:
    - For each activated terminal, Monte Carlo sampling generates hourly data usage based on the exponential distribution. The total downlink data usage for the $s_a$-th sample in area $k$ at time $t$ can be calculated using:
 
-$$
-   T_{\text{dd},k}(t,s_a) = \sum_{s_d=1}^{\beta_k(t,s_a)} T_{\text{dd},k}(t,s_a,s_d)
-$$
-   *(Equation 9)*
+*Equation 9:*
+$$T_{\text{dd},k}(t,s_a) = \sum_{s_d=1}^{\beta_k(t,s_a)} T_{\text{dd},k}(t,s_a,s_d)$$
 
 3. **Calculate Mean Total Data Usage**:
    - Repeating the above steps $N_m$ times for each hour, the mean total data usage $\mu_{\text{data},k}(t)$ in area $k$ at time $t$ is calculated as:
 
-$$
-   \mu_{\text{data},k}(t) = \frac{1}{N_m} \sum_{s_a=1}^{N_m} T_{\text{dd},k}(t,s_a)
-$$
-   *(Equation 10)*
+*Equation 10:*
+$$\mu_{\text{data},k}(t) = \frac{1}{N_m} \sum_{s_a=1}^{N_m} T_{\text{dd},k}(t,s_a)$$
 
 ---
 
@@ -232,11 +226,10 @@ $$
 
 1. **Total Equivalent Downlink Data Rate**:
    - Once the mean total data usage for multiple terminals is obtained, the total equivalent downlink data rate $T_{\text{dd},k}(t)$ can be determined using the following equation:
+
+*Equation 5:*
+$$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
    
-$$
-   T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)
-$$
-   *(Equation 5)*
 
 2. **Calculation of Downlink Data Rate and Signaling REs**:
    - The downlink data rate and signaling REs at time $t$ in area $k$ can be calculated using:
