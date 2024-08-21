@@ -110,7 +110,7 @@ The incremental power consumption of the AAU, denoted as $P_{i,\text{AAU}}(t)$, 
 
 #### Total Incremental Power Consumption:
 
-*(Equation 2):*
+*Equation 2:*
 $$P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)$$
 
 
@@ -119,7 +119,7 @@ $$P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}
 
 #### Power Consumption Related to Downlink Data Volume:
 
-*(Equation 3):*
+*Equation 3:*
 $$P_{\text{idd},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd},\text{max}}} \cdot T_{\text{dd}}(t)$$
 
 - **$P_{\text{max},\text{AAU}}$**: Maximum power consumption of the AAU.
@@ -129,10 +129,8 @@ $$P_{\text{idd},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\
 
 #### Power Consumption Related to Downlink Signaling REs:
 
-$$
-   P_{\text{ids},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds},\text{RE}} + R_{\text{dd},\text{RE}}} \cdot R_{\text{ds}}(t)
-$$
-*(Equation 4)*
+*Equation 4:*
+$$P_{\text{ids},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds},\text{RE}} + R_{\text{dd},\text{RE}}} \cdot R_{\text{ds}}(t)$$
 
 - **$R_{\text{ds},\text{RE}}$**: Total available signaling REs for variable signaling per second.
 - **$R_{\text{dd},\text{RE}}$**: Total available REs for downlink data per second.
@@ -140,10 +138,8 @@ $$
 
 #### Relationship Between Data Rate and Signaling REs:
 
-$$
-   T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)
-$$
-*(Equation 5)*
+*Equation 5:*
+$$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
 
 - **$A_{\text{RE}}$**: Average amount of downlink data carried by each downlink signaling RE [Mb/RE], which depends on the average channel quality of the mobile devices.
 
