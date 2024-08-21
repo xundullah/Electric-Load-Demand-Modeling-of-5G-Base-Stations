@@ -263,7 +263,7 @@ The process for calculating the total power consumption of 5G BSs in a given are
    
 *Equation 12:*  
 
-$T_{\text{dd},k}(t)$ = $\min$[$N_k$ $\cdot$ $T_{\text{dd}_\text{max}}$, $T_{\text{dd},k}$$(t)]$
+$$T_{\text{dd},k}(t) = \min[N_k \cdot T_{\text{dd}_\text{max}}, T_{\text{dd},k}(t)]$$
 
 $$R_{\text{ds},k}(t) = \min[N_k \cdot R_{\text{ds}_\text{max}}, R_{\text{ds},k}(t)]$$
 
