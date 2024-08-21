@@ -320,7 +320,6 @@ The process for calculating the total power consumption of 5G BSs in a given are
    $$
    P_{\text{i},\text{AAU},k}(t) = P_{\text{idd},\text{AAU},k}(t) + P_{\text{ids},\text{AAU},k}(t)
    $$
-   
    *(Equation 17)*
 
    - The total power consumption for the 5G BS in area $k$ at time $t$ is then given by:
@@ -328,20 +327,14 @@ The process for calculating the total power consumption of 5G BSs in a given are
    $$
    P_{\text{we},k}(t) = P_{\text{i},\text{AAU},k}(t) + P_{\text{b},\text{AAU},k} + P_{\text{b},\text{BBU},k}
    $$
-   
    *(Equation 18)*
 
 5. **Final Total Power Consumption Including Air Conditioning and Power Equipment**:
    - Including the power consumption of air conditioning and power equipment, the final total power consumption for all BSs in area $k$ is:
 
-   $$ P_{\text{S\_total},k}(t) = P_{\text{we},k}(t) + N_k \cdot P_{\text{ac},\text{pe}}(t) $$
-
-   `P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)` *(Equation 2)*
-
-   \`P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)\` *(Equation 2)*
-
-   \( P_{\text{S\_total},k}(t) = P_{\text{we},k}(t) + N_k \cdot P_{\text{ac},\text{pe}}(t) \)
-   
+   $$
+   P_{\text{S\_total},k}(t) = P_{\text{we},k}(t) + N_k \cdot P_{\text{ac},\text{pe}}(t)
+   $$
    *(Equation 19)*
 
 This comprehensive model allows for the precise estimation of power consumption by 5G BSs, providing a critical tool for managing energy efficiency and optimizing network performance in the context of increasing demand for mobile services.
