@@ -309,8 +309,8 @@ $$
 5. **Final Total Power Consumption Including Air Conditioning and Power Equipment**:
    - Including the power consumption of air conditioning and power equipment, the final total power consumption for all BSs in area $k$ is:
 
-   *Equation 19:*
-   $$P_{\text{S\_total},k}(t) = P_{\text{we},k}(t) + N_k \cdot P_{\text{ac},\text{pe}}(t)$$
+*Equation 19:*
+$$P_{\text{S\_total},k}(t) = P_{\text{we},k}(t) + N_k \cdot P_{\text{ac},\text{pe}}(t)$$
    
 
 This comprehensive model allows for the precise estimation of power consumption by 5G BSs, providing a critical tool for managing energy efficiency and optimizing network performance in the context of increasing demand for mobile services.
