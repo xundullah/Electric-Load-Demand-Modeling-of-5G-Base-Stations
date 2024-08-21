@@ -259,7 +259,7 @@ The estimation of the total electric load of 5G BSs in the area provides insight
 
 The process for calculating the total power consumption of 5G BSs in a given area $k$ at time $t$ involves both incremental and baseline power consumption considerations for various components, such as the Active Antenna Unit (AAU) and Baseband Unit (BBU). The following key equations and steps outline this process:
 
-1. **Total Downlink Data Rate and Signaling REs**:
+**Total Downlink Data Rate and Signaling REs**:
    
 *Equation 12:*
 
