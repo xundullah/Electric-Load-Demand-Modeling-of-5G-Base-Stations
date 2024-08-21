@@ -267,7 +267,7 @@ $$T_{\text{dd},k}(t) = \min[N_k \cdot T_{\text{dd}_\text{max}}, T_{\text{dd},k}(
 
 $$R_{\text{ds},k}(t) = \min[N_k \cdot R_{\text{ds}_\text{max}}, R_{\text{ds},k}(t)]$$
 
-$$R_{\text{ds}_\text{max}} = R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}$$"
+$$R_{\text{ds}_\text{max}} = R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}$$
 
 
 2. **Incremental Power Consumption of AAU**:
