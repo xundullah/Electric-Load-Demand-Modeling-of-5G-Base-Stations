@@ -298,23 +298,22 @@ $$P_{b,BBU,k} = N_k \cdot P_{b,BBU}$$
 4. **Total Power Consumption**:
    - The total power consumption for a single AAU, including incremental and baseline components, is calculated as:
 
-   $$
-   P_{\text{i},\text{AAU},k}(t) = P_{\text{idd},\text{AAU},k}(t) + P_{\text{ids},\text{AAU},k}(t)
-   $$
-   *(Equation 17)*
+*Equation 17:*  
+
+$$P_{i,AAU,k}(t) = P_{idd,AAU,k}(t) + P_{ids,AAU,k}(t)$$
 
    - The total power consumption for the 5G BS in area $k$ at time $t$ is then given by:
 
-   $$
-   P_{\text{we},k}(t) = P_{\text{i},\text{AAU},k}(t) + P_{\text{b},\text{AAU},k} + P_{\text{b},\text{BBU},k}
-   $$
-   *(Equation 18)*
+*Equation 18:*  
+
+$$P_{we,k}(t) = P_{i,AAU,k}(t) + P_{b,AAU,k} + P_{b,BBU,k}$$
 
 5. **Final Total Power Consumption Including Air Conditioning and Power Equipment**:
    - Including the power consumption of air conditioning and power equipment, the final total power consumption for all BSs in area $k$ is:
 
-*Equation 19:*
-$$P_{\text{S\_total},k}(t) = P_{\text{we},k}(t) + N_k \cdot P_{\text{ac},\text{pe}}(t)$$
+*Equation 19:*  
+
+$$P_{S\_total,k}(t) = P_{we,k}(t) + N_k \cdot P_{ac,pe}(t)$$
    
 
 This comprehensive model allows for the precise estimation of power consumption by 5G BSs, providing a critical tool for managing energy efficiency and optimizing network performance in the context of increasing demand for mobile services.
