@@ -96,9 +96,9 @@ The electric load characteristics of a 5G base station (BS) focus on the power c
 5. **Mathematical Representation**:
    - The total power consumption of the wireless equipment in a 5G BS at any time $t$ consists of both static baseline power consumption and time-varying incremental power consumption, represented by the equation:
 
-   $$
+$$
    P_{\text{we}}(t) = P_{i,\text{AAU}}(t) + P_{b,\text{AAU}} + P_{b,\text{BBU}}
-   $$
+$$
    *(Equation 1)*
 
    where:
@@ -113,7 +113,7 @@ The incremental power consumption of the AAU, denoted as $P_{i,\text{AAU}}(t)$, 
 #### Total Incremental Power Consumption:
 
 $$
-P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)
+   P_{i,\text{AAU}}(t) = P_{\text{idd},\text{AAU}}(t) + P_{\text{ids},\text{AAU}}(t)
 $$
 *(Equation 2)*
 
@@ -123,7 +123,7 @@ $$
 #### Power Consumption Related to Downlink Data Volume:
 
 $$
-P_{\text{idd},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd},\text{max}}} \cdot T_{\text{dd}}(t)
+   P_{\text{idd},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd},\text{max}}} \cdot T_{\text{dd}}(t)
 $$
 *(Equation 3)*
 
@@ -135,7 +135,7 @@ $$
 #### Power Consumption Related to Downlink Signaling REs:
 
 $$
-P_{\text{ids},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds},\text{RE}} + R_{\text{dd},\text{RE}}} \cdot R_{\text{ds}}(t)
+   P_{\text{ids},\text{AAU}}(t) = \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds},\text{RE}} + R_{\text{dd},\text{RE}}} \cdot R_{\text{ds}}(t)
 $$
 *(Equation 4)*
 
@@ -146,7 +146,7 @@ $$
 #### Relationship Between Data Rate and Signaling REs:
 
 $$
-T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)
+   T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)
 $$
 *(Equation 5)*
 
@@ -162,13 +162,13 @@ The hourly data usage for 5G network terminals in different usage states (normal
    - Hourly data usage for the normal use state ($\alpha^n_k(t)$) and heavy use state ($\alpha^h_k(t)$) follows an exponential distribution.
    - The probability density functions for these states are given by:
 
-     $$
+$$
      f[\alpha^n_k(t)] = \frac{1}{\theta_{\alpha^n_k(t)}} e^{-\frac{\alpha^n_k(t)}{\theta_{\alpha^n_k(t)}}}, \quad \alpha^n_k(t) > 0
-     $$
+$$
 
-     $$
+$$
      f[\alpha^h_k(t)] = \frac{1}{\theta_{\alpha^h_k(t)}} e^{-\frac{\alpha^h_k(t)}{\theta_{\alpha^h_k(t)}}}, \quad \alpha^h_k(t) > 0
-     $$
+$$
      *(Equation 6)*
 
 2. **Parameters of Exponential Distribution**:
@@ -178,13 +178,13 @@ The hourly data usage for 5G network terminals in different usage states (normal
 3. **Parameter Conversion**:
    - The parameters of the exponential distribution are converted using the mean value of historical data usage:
 
-     $$
+$$
      \theta_{\alpha^n_k(t)} = \gamma_Q M_{\alpha^n_k}
-     $$
+$$
 
-     $$
+$$
      \theta_{\alpha^h_k(t)} = \gamma_Q M_{\alpha^h_k}
-     $$
+$$
      *(Equation 7)*
 
    - Here, $\gamma_Q$ depends on the average bandwidth requirement for different quality levels of 5G applications compared to historical data usage.
@@ -208,9 +208,9 @@ This model estimates the electric load demand for multiple terminals connected t
 - **Modeling the Number of Activated Terminals**:
   - The number of activated terminals $\beta_k(t)$ in different types of areas is modeled using a Poisson distribution:
 
-  $$
+$$
   P[\beta_k(t) = n] = \frac{\lambda_{\beta_k(t)}^n e^{-\lambda_{\beta_k(t)}}}{n!}, \quad n = 1, 2, \dots
-  $$
+$$
   *(Equation 8)*
 
   - The parameter $\lambda_{\beta_k(t)}$ represents the expected number of activated terminals at time $t$ in area $k$.
@@ -227,17 +227,17 @@ The Monte Carlo sampling approach models and estimates the hourly total data usa
 2. **Generate Hourly Data Usage per Terminal**:
    - For each activated terminal, Monte Carlo sampling generates hourly data usage based on the exponential distribution. The total downlink data usage for the $s_a$-th sample in area $k$ at time $t$ can be calculated using:
 
-   $$
+$$
    T_{\text{dd},k}(t,s_a) = \sum_{s_d=1}^{\beta_k(t,s_a)} T_{\text{dd},k}(t,s_a,s_d)
-   $$
+$$
    *(Equation 9)*
 
 3. **Calculate Mean Total Data Usage**:
    - Repeating the above steps $N_m$ times for each hour, the mean total data usage $\mu_{\text{data},k}(t)$ in area $k$ at time $t$ is calculated as:
 
-   $$
+$$
    \mu_{\text{data},k}(t) = \frac{1}{N_m} \sum_{s_a=1}^{N_m} T_{\text{dd},k}(t,s_a)
-   $$
+$$
    *(Equation 10)*
 
 ---
@@ -247,20 +247,20 @@ The Monte Carlo sampling approach models and estimates the hourly total data usa
 1. **Total Equivalent Downlink Data Rate**:
    - Once the mean total data usage for multiple terminals is obtained, the total equivalent downlink data rate $T_{\text{dd},k}(t)$ can be determined using the following equation:
    
-   $$
+$$
    T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)
-   $$
+$$
    *(Equation 5)*
 
 2. **Calculation of Downlink Data Rate and Signaling REs**:
    - The downlink data rate and signaling REs at time $t$ in area $k$ can be calculated using:
    
-   $$
+$$
    \begin{aligned}
    T_{\text{dd},k}(t) &= 8 \cdot \mu_{\text{data},k}(t) / 3600 \\
    R_{\text{ds},k}(t) &= T_{\text{dd},k}(t) / A_{\text{RE}}
    \end{aligned}
-   $$
+$$
    *(Equation 11)*
 
 ---
@@ -283,35 +283,35 @@ The process for calculating the total power consumption of 5G BSs in a given are
 
 1. **Total Downlink Data Rate and Signaling REs**:
    
-   $$
+$$
    \begin{aligned}
    T_{\text{dd},k}(t) &= \min[N_k \cdot T_{\text{dd}_\text{max}}, T_{\text{dd},k}(t)] \\
    R_{\text{ds},k}(t) &= \min[N_k \cdot R_{\text{ds}_\text{max}}, R_{\text{ds},k}(t)] \\
    R_{\text{ds}_\text{max}} &= R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}
    \end{aligned}
-   $$
+$$
    *(Equation 12)*
 
 2. **Incremental Power Consumption of AAU**:
    - The incremental power consumption is calculated by substituting the total downlink data rate and signaling REs into the incremental power consumption equations:
 
-   $$
+$$
    \begin{aligned}
    P_{\text{idd},\text{AAU},k}(t) &= N_k \cdot \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{T_{\text{dd}_\text{max}}} \cdot \frac{T_{\text{dd},k}(t)}{N_k} \\
    P_{\text{ids},\text{AAU},k}(t) &= N_k \cdot \frac{P_{\text{max},\text{AAU}} - P_{\text{b},\text{AAU}}}{R_{\text{ds}_\text{RE}} + R_{\text{dd}_\text{RE}}} \cdot \frac{R_{\text{ds},k}(t)}{N_k}
    \end{aligned}
-   $$
+$$
    *(Equations 13 and 14)*
 
 3. **Baseline Power Consumption**:
    - The baseline power consumption for the AAU and BBU in area $k$ at time $t$ is given by:
 
-   $$
+$$
    \begin{aligned}
    P_{\text{b},\text{AAU},k} &= N_k \cdot P_{\text{b},\text{AAU}} \\
    P_{\text{b},\text{BBU},k} &= N_k \cdot P_{\text{b},\text{BBU}}
    \end{aligned}
-   $$
+$$
    *(Equations 15 and 16)*
 
 4. **Total Power Consumption**:
