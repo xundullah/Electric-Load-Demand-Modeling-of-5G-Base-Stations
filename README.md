@@ -161,7 +161,7 @@ The hourly data usage for 5G network terminals in different usage states (normal
    - Hourly data usage for the normal use state $\alpha^n_k(t)$ and heavy use state $\alpha^h_k(t)$ follows an exponential distribution.
    - The probability density functions for these states are given by:
 
-*Equation 6:*
+`Equation 6:`
 
 $$f[\alpha^n_k(t)] = \frac{1}{\theta_{\alpha^n_k(t)}} e^{-\frac{\alpha^n_k(t)}{\theta_{\alpha^n_k(t)}}}, \quad \alpha^n_k(t) > 0$$
 
