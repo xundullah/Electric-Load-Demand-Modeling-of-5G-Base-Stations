@@ -175,7 +175,7 @@ $$f[\alpha^h_k(t)] = \frac{1}{\theta_{\alpha^h_k(t)}} e^{-\frac{\alpha^h_k(t)}{\
 3. **Parameter Conversion**:
    - The parameters of the exponential distribution are converted using the mean value of historical data usage:
 
-*Equation 7:*
+`Equation 7:`
 
 $$\theta_{\alpha^n_k(t)} = \gamma_Q M_{\alpha^n_k}$$
 
@@ -202,7 +202,7 @@ This model estimates the electric load demand for multiple terminals connected t
 - **Modeling the Number of Activated Terminals**:
   - The number of activated terminals $\beta_k(t)$ in different types of areas is modeled using a Poisson distribution:
 
-*Equation 8:*
+`Equation 8:`
 $$P[\beta_k(t) = n] = \frac{\lambda_{\beta_k(t)}^n e^{-\lambda_{\beta_k(t)}}}{n!}, \quad n = 1, 2, \dots$$
 
   - The parameter $\lambda_{\beta_k(t)}$ represents the expected number of activated terminals at time $t$ in area $k$.
@@ -219,13 +219,13 @@ The Monte Carlo sampling approach models and estimates the hourly total data usa
 2. **Generate Hourly Data Usage per Terminal**:
    - For each activated terminal, Monte Carlo sampling generates hourly data usage based on the exponential distribution. The total downlink data usage for the $s_a$-th sample in area $k$ at time $t$ can be calculated using:
 
-*Equation 9:*
+`Equation 9:`
 $$T_{\text{dd},k}(t,s_a) = \sum_{s_d=1}^{\beta_k(t,s_a)} T_{\text{dd},k}(t,s_a,s_d)$$
 
 3. **Calculate Mean Total Data Usage**:
    - Repeating the above steps $N_m$ times for each hour, the mean total data usage $\mu_{\text{data},k}(t)$ in area $k$ at time $t$ is calculated as:
 
-*Equation 10:*
+`Equation 10:`
 $$\mu_{\text{data},k}(t) = \frac{1}{N_m} \sum_{s_a=1}^{N_m} T_{\text{dd},k}(t,s_a)$$
 
 ---
@@ -235,7 +235,7 @@ $$\mu_{\text{data},k}(t) = \frac{1}{N_m} \sum_{s_a=1}^{N_m} T_{\text{dd},k}(t,s_
 1. **Total Equivalent Downlink Data Rate**:
    - Once the mean total data usage for multiple terminals is obtained, the total equivalent downlink data rate $T_{\text{dd},k}(t)$ can be determined using the following equation:
 
-*Equation 5:*
+`Equation 5:`
 $$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
    
 
@@ -243,7 +243,7 @@ $$T_{\text{dd}}(t) = A_{\text{RE}} \cdot R_{\text{ds}}(t)$$
    - The downlink data rate and signaling REs at time $t$ in area $k$ can be calculated using:
 
 
-*Equation 11:*  
+`Equation 11:`  
 
 $$T_{\text{dd},k}(t) = \frac{8 \cdot \mu_{\text{data},k}(t)}{3600}$$
 
@@ -269,7 +269,7 @@ The process for calculating the total power consumption of 5G BSs in a given are
 
 1. **Total Downlink Data Rate and Signaling REs**:
    
-*Equation 12:*  
+`Equation 12:`  
 
 $$T_{dd,k}(t) = \min \[ N_k \cdot T_{dd_{max}} , T_{dd,k}(t)]$$
 
@@ -283,11 +283,11 @@ $$R_{ds_{max}} = R_{ds_{RE}} + R_{dd_{RE}}$$
 2. **Incremental Power Consumption of AAU**:
    - The incremental power consumption is calculated by substituting the total downlink data rate and signaling REs into the incremental power consumption equations:
 
-*Equation 13:*  
+`Equation 13:`  
 
 $$P_{idd,AAU,k}(t) = N_k \cdot \frac{P_{max,AAU} - P_{b,AAU}}{T_{dd_{max}}} \cdot \frac{T_{dd,k}(t)}{N_k}$$
 
-*Equation 14:*  
+`Equation 14:`  
 
 $$P_{ids,AAU,k}(t) = N_k \cdot \frac{P_{max,AAU} - P_{b,AAU}}{R_{ds_{RE}} + R_{dd_{RE}}} \cdot \frac{R_{ds,k}(t)}{N_k}$$
 
@@ -295,31 +295,31 @@ $$P_{ids,AAU,k}(t) = N_k \cdot \frac{P_{max,AAU} - P_{b,AAU}}{R_{ds_{RE}} + R_{d
 3. **Baseline Power Consumption**:
    - The baseline power consumption for the AAU and BBU in area $k$ at time $t$ is given by:
 
-*Equations 15:*  
+`Equations 15:`  
 
 $$P_{b,AAU,k} = N_k \cdot P_{b,AAU}$$
 
-*Equations 16:* 
+`Equations 16:` 
 
 $$P_{b,BBU,k} = N_k \cdot P_{b,BBU}$$
 
 4. **Total Power Consumption**:
    - The total power consumption for a single AAU, including incremental and baseline components, is calculated as:
 
-*Equation 17:*  
+`Equation 17:`  
 
 $$P_{i,AAU,k}(t) = P_{idd,AAU,k}(t) + P_{ids,AAU,k}(t)$$
 
    - The total power consumption for the 5G BS in area $k$ at time $t$ is then given by:
 
-*Equation 18:*  
+`Equation 18:`  
 
 $$P_{we,k}(t) = P_{i,AAU,k}(t) + P_{b,AAU,k} + P_{b,BBU,k}$$
 
 5. **Final Total Power Consumption Including Air Conditioning and Power Equipment**:
    - Including the power consumption of air conditioning and power equipment, the final total power consumption for all BSs in area $k$ is:
 
-*Equation 19:*  
+`Equation 19:`  
 
 $$P_{s_{total},k}(t) = P_{we,k}(t) + N_k \cdot P_{ac,pe}(t)$$ 
 
